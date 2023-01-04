@@ -1,14 +1,9 @@
 import styled from '@emotion/styled';
 
 export const TransHistStyles = styled.div`
-  background-color: #fff;
-  /* width: 400px; */
-  /* position: relative; */
   margin: 50px;
-  /* margin-right: auto;
-  margin-left: auto; */
   margin-bottom: 20px;
-  width: 50%;
+  width: 400px;
 
   th,
   td {
@@ -17,14 +12,18 @@ export const TransHistStyles = styled.div`
     width: 150px;
   }
   th {
-    background-color: #3374c9f7;
+    background-color: #00bcd5;
     color: white;
     width: 30px;
   }
-  tr:nth-child(even) {
-    background-color: #82b2bdb0;
+  tr {
+    background-color: #fff;
+  }
+  tr:nth-of-type(even) {
+    background-color: #ecf1f3;
   }
   tr:hover {
     background-color: orange;
+    font-weight: 800;
   }
 `;

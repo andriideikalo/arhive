@@ -26,3 +26,10 @@ export const TransactionHistory = ({ items }) => {
     </TransHistStyles>
   );
 };
+TransactionHistory.propTypes = {
+  type: PropTypes.string,
+  amount: PropTypes.number,
+  currency: PropTypes.string,
+};
+
+export default TransactionHistory;
