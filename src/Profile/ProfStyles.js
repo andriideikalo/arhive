@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 
 export const ProfStyles = styled.div`
   border: 1px solid lightgray;
+  background-color: #fff;
   width: 500px;
   height:500px;
   position: relative;
