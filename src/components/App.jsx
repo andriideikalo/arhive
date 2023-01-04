@@ -1,5 +1,5 @@
 import { Profile } from "../Profile/Profile";
-import users from "../users"
+import users from "../data/users"
 
 
 
