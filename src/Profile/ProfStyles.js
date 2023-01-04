@@ -8,6 +8,15 @@ export const ProfStyles = styled.div`
   position: relative;
   padding-top: 20px;
   margin: 50px;
+  transition-duration: 250ms;
+
+  :hover,
+  :focus {
+    box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.1), 0px 1px 25px rgba(0, 0, 0, 0.08), 0px 2px 25px rgba(0, 0, 0, 0.12);
+    transform: scale(1.1);
+    transition-duration: 250ms;
+    outline: none;
+  }
 
   p {
     margin: 0;
