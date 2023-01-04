@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import React from 'react';
+// import React from 'react';
 import { ProfStyles } from "./ProfStyles"
 
 export const Profile = ( { users } ) => {
@@ -11,7 +11,7 @@ export const Profile = ( { users } ) => {
       alt="User avatar"
       className="avatar"
     />
-    <p className="name">{ users.username}</p>
+    <p className="name">{users.username}</p>
     <p className="tag">@{users.tag}</p>
     <p className="location">{users.location}</p>
   </div>
@@ -35,7 +35,7 @@ export const Profile = ( { users } ) => {
 };
 
 Profile.propTypes = {
-  name: PropTypes.string.isRequired,
+  username: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
