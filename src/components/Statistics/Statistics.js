@@ -1,30 +1,23 @@
 import PropTypes from 'prop-types';
-import React from 'react';
+// import React from 'react';
 import { StatStyles } from "./StatStyles"
-import { datas } from "../../data/data.json"
 
-export const Statistics = ( { data } ) => {
+
+export const Statistics = ( { title, stats } ) => {
     return (<StatStyles>
        <section className="statistics">
   <h2 className="title">Upload stats</h2>
 
   <ul className="stat-list">
-    <li className="item" key={data.id}>
-      <span className="label" >555</span>
-      <span className="percentage">555</span>
-    </li>
-    <li className="item">
-      <span className="label">.mp3</span>
-      <span className="percentage">14%</span>
-    </li>
-    <li className="item">
-      <span className="label">.pdf</span>
-      <span className="percentage">41%</span>
-    </li>
-    <li className="item">
-      <span className="label">.mp4</span>
-      <span className="percentage">12%</span>
-    </li>
+{stats.map(({ id, label, percentage }) => (
+          <li
+            className="item"
+            key={id}
+             >
+            <span className="label">{label}</span>
+            <span className="percentage">{percentage}%</span>
+          </li>
+        ))}
   </ul>
 </section>
     </StatStyles>);

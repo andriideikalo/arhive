@@ -8,7 +8,8 @@ export const App = () => {
   return (
     <>
       <Profile users={users}/>
-      <Statistics data={data}/>
+      <Statistics title="Upload stats" stats={data}/>
+      <Statistics stats={data}/>
     </>
   );
 };
