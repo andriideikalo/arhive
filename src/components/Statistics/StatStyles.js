@@ -25,7 +25,8 @@ export const StatStyles = styled.div`
 
 .title {
      text-align: center;
-      font-weight: 800;
+      font-weight: 700;
+      text-transform: uppercase;
 
    
 }
@@ -42,6 +43,7 @@ export const StatStyles = styled.div`
 .item {
     width: 80px;
     height: 70px;
+    color: #fff;
  
 }
 
@@ -53,6 +55,7 @@ export const StatStyles = styled.div`
 .percentage{
   font-size: 16px;
    font-weight: 500;
+
    
 }
 `;
