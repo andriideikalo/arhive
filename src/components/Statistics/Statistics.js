@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { FaPercent } from 'react-icons/fa';
 import { StatStyles } from "./StatStyles"
+import {getRandomHexColor} from "./GetRandomHexColor"
 
 
 export const Statistics = ( { title, stats } ) => {
@@ -12,6 +13,9 @@ export const Statistics = ( { title, stats } ) => {
 {stats.map(({ id, label, percentage }) => (
           <li
             className="item"
+            style={{
+              backgroundColor: getRandomHexColor(),
+            }}
             key={id}
              >
             <span className="label">{label}</span>

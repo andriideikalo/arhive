@@ -41,6 +41,7 @@ export const StatStyles = styled.div`
 
 .item {
     width: 60px;
+ 
 }
 
 .label {
@@ -53,3 +54,9 @@ export const StatStyles = styled.div`
    font-weight: 500;
 }
 `;
+
+
+
+export function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+}
