@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-// import React from 'react';
+import { FaPercent } from 'react-icons/fa';
 import { StatStyles } from "./StatStyles"
 
 
@@ -15,7 +15,7 @@ export const Statistics = ( { title, stats } ) => {
             key={id}
              >
             <span className="label">{label}</span>
-            <span className="percentage">{percentage}%</span>
+            <span className="percentage">{percentage}<FaPercent/></span>
           </li>
         ))}
   </ul>

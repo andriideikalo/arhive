@@ -9,7 +9,7 @@ export const App = () => {
     <>
       <Profile users={users}/>
       <Statistics title="Upload stats" stats={data}/>
-      <Statistics stats={data}/>
+      {/* <Statistics stats={data}/> */}
     </>
   );
 };

@@ -24,7 +24,7 @@ export const StatStyles = styled.div`
 }
 
 .title {
-  text-align: center;
+     text-align: center;
       font-weight: 800;
 
    
@@ -47,5 +47,9 @@ export const StatStyles = styled.div`
     display: block;
         font-weight: 500;
         padding: 10px;
+}
+.percentage{
+  font-size: 16px;
+   font-weight: 500;
 }
 `;
