@@ -1,12 +1,14 @@
-import { Profile } from "../Profile/Profile";
+import { Profile } from "./Profile/Profile";
+import {Statistics} from "./Statistics/Statistics"
 import users from "../data/users"
-
+import data from "../data/data"
 
 
 export const App = () => {
   return (
     <div>
       < Profile users={users}/>
+      < Statistics data={data}/>
     </div>
   );
 };
