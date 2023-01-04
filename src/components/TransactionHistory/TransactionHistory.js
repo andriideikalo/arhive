@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
-import { FrendStyles } from './FriendListStyles';
+import { TransHistStyles } from './TransactionHistoryStyles';
 
-export const FriendList = ({ friends }) => {
+export const TransactionHistory = ({ items }) => {
   return (
-    <FrendStyles>
+    <TransHistStyles>
       <ul className="frend-list">
-        {friends.map(({ id, avatar, name, isOnline }) => (
+        {items.map(({ id, avatar, name, isOnline }) => (
           <li className="item" key={id}>
             <span id={isOnline ? 'online' : 'notonline'}>{isOnline}</span>
             <img className="avatar" src={avatar} alt="User avatar" width="48" />
@@ -13,13 +13,14 @@ export const FriendList = ({ friends }) => {
           </li>
         ))}
       </ul>
-    </FrendStyles>
+    </TransHistStyles>
   );
 };
 
-FriendList.propTypes = {
-  avatar: PropTypes.string,
-  name: PropTypes.string,
+TransactionHistory.propTypes = {
+  type: PropTypes.string,
+  amount: PropTypes.number,
+  currency: PropTypes.string,
 };
 
-export default FriendList;
+export default TransactionHistory;

@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const FrendStyles = styled.div`
+export const TransHistStyles = styled.div`
   background-color: #fff;
   width: 400px;
   position: relative;
