@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 export const ProfStyles = styled.div`
   border: 1px solid lightgray;
   background-color: #fff;
-  width: 500px;
+  width: 400px;
   height:500px;
   position: relative;
   padding-top: 20px;

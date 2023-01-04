@@ -5,7 +5,7 @@ import styled from '@emotion/styled';
 export const StatStyles = styled.div`
   border: 1px solid lightgray;
   background-color: #fff;
-  width: 500px;
+  width: 400px;
 
   position: relative;
   padding-top: 20px;
@@ -20,7 +20,7 @@ export const StatStyles = styled.div`
     margin-right: auto;
     margin-left: auto;
 
-    width: 300px;
+    width: 400px;
 }
 
 .title {
@@ -40,7 +40,8 @@ export const StatStyles = styled.div`
 }
 
 .item {
-    width: 60px;
+    width: 80px;
+    height: 70px;
  
 }
 
@@ -52,11 +53,9 @@ export const StatStyles = styled.div`
 .percentage{
   font-size: 16px;
    font-weight: 500;
+   
 }
 `;
 
 
 
-export function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-}
