@@ -4,23 +4,25 @@ import { TransHistStyles } from './TransactionHistoryStyles';
 export const TransactionHistory = ({ items }) => {
   return (
     <TransHistStyles>
-      <ul className="frend-list">
-        {items.map(({ id, avatar, name, isOnline }) => (
-          <li className="item" key={id}>
-            <span id={isOnline ? 'online' : 'notonline'}>{isOnline}</span>
-            <img className="avatar" src={avatar} alt="User avatar" width="48" />
-            <p className="name">{name}</p>
-          </li>
-        ))}
-      </ul>
+      <table className="transaction-history">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Amount</th>
+            <th>Currency</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {items.map(item => (
+            <tr key={item.id}>
+              <td>{item.type}</td>
+              <td>{item.amount}</td>
+              <td>{item.currency}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </TransHistStyles>
   );
 };
-
-TransactionHistory.propTypes = {
-  type: PropTypes.string,
-  amount: PropTypes.number,
-  currency: PropTypes.string,
-};
-
-export default TransactionHistory;

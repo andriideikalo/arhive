@@ -12,11 +12,11 @@ import data from "../data/data";
 export const App = () => {
   return (
     <>
-      <Profile users={users}/>;
-      <Statistics title="Upload stats" stats={data}/>;
+      <Profile users={users}/>
+      <Statistics title="Upload stats" stats={data}/>
       {/* <Statistics stats={data}/>; */}
-      <FriendList friends={friends} />;
-      <TransactionHistory items={transactions} />;
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </>
   );
 };
