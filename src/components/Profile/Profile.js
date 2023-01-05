@@ -2,29 +2,29 @@ import PropTypes from 'prop-types';
 // import React from 'react';
 import { ProfStyles } from './ProfStyles';
 
-export const Profile = ({ users }) => {
+export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <ProfStyles>
       <div className="profile">
         <div className="description">
-          <img src={users.avatar} alt="User avatar" className="avatar" />
-          <p className="name">{users.username}</p>
-          <p className="tag">@{users.tag}</p>
-          <p className="location">{users.location}</p>
+          <img src={avatar} alt="User avatar" className="avatar" />
+          <p className="name">{username}</p>
+          <p className="tag">@{tag}</p>
+          <p className="location">{location}</p>
         </div>
 
         <ul className="stats">
           <li>
             <span className="label">Followers </span>
-            <span className="quantity">{users.stats.followers}</span>
+            <span className="quantity">{stats.followers}</span>
           </li>
           <li>
             <span className="label">Views </span>
-            <span className="quantity">{users.stats.views}</span>
+            <span className="quantity">{stats.views}</span>
           </li>
           <li>
             <span className="label">Likes </span>
-            <span className="quantity">{users.stats.likes}</span>
+            <span className="quantity">{stats.likes}</span>
           </li>
         </ul>
       </div>
@@ -32,15 +32,17 @@ export const Profile = ({ users }) => {
   );
 };
 
+// console.dir(Profile);
+
 Profile.propTypes = {
-  username: PropTypes.string,
-  tag: PropTypes.string,
-  location: PropTypes.string,
-  avatar: PropTypes.string,
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
   stats: PropTypes.shape({
-    followers: PropTypes.number,
-    views: PropTypes.number,
-    likes: PropTypes.number,
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
   }),
 };
 
