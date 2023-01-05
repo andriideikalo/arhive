@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { FaPercent } from 'react-icons/fa';
-import { StatStyles } from './StatStyles';
+import { StatStyles } from './Statistics.Styles';
 import { getRandomHexColor } from './GetRandomHexColor';
 
 export const Statistics = ({ title, stats }) => {

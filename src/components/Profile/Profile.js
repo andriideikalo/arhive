@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 // import React from 'react';
-import { ProfStyles } from './ProfStyles';
+import { ProfStyles } from './Profile.Styles';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
