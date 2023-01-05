@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { TransHistStyles } from './TransactionHistoryStyles';
+import { TransHistStyles } from './TransactionHistory.Styles';
 
 export const TransactionHistory = ({ items }) => {
   return (
