@@ -9,6 +9,13 @@ export const FrendStyles = styled.div`
   .frend-list {
     padding: 0;
   }
+`;
+export const FrendItemStyles = styled.div`
+  background-color: #fff;
+  width: 400px;
+  position: relative;
+  margin: 50px;
+
   .avatar {
     display: block;
     width: 80px;

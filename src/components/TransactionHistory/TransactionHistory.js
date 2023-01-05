@@ -26,6 +26,8 @@ export const TransactionHistory = ({ items }) => {
     </TransHistStyles>
   );
 };
+
+// console.dir(TransactionHistory);
 TransactionHistory.propTypes = {
   type: PropTypes.string,
   amount: PropTypes.number,
