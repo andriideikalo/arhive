@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
-import { FrendStyles } from './FriendList.Styles';
+import { FrendItemStyles } from './FriendList.Styles';
 
 export const FriendListItem = ({ friends }) => {
   return (
-    <FrendStyles>
+    <FrendItemStyles>
       {friends.map(({ id, avatar, name, isOnline }) => (
         <li className="item" key={id}>
           <span id={isOnline ? 'online' : 'notonline'}>{isOnline}</span>
@@ -11,7 +11,7 @@ export const FriendListItem = ({ friends }) => {
           <p className="name">{name}</p>
         </li>
       ))}
-    </FrendStyles>
+    </FrendItemStyles>
   );
 };
 
